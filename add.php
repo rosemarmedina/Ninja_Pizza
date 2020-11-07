@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
         }
     }
 
-    //check title using post global
+    //check title 
     if(empty($_POST['title'])){
         $errors['title'] = 'A title is required <br/>';
     } else {
