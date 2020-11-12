@@ -1,10 +1,6 @@
 <?php
-//connect to database
-$conn = mysqli_connect('localhost', 'shaun', 'test1234', 'ninja_pizza');
-//check connection
-if(!$conn){
-    echo 'Connection error:' . mysqli_connect_error();
-}
+
+include ('db_connect.php');
 
 //write a query for all pizza
 $sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at'; //we added order by to arrange the array according to when its created
